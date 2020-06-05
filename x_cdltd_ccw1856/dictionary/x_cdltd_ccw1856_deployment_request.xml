@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="Deployment Request" max_length="40" name="x_cdltd_ccw1856_deployment_request" sizeclass="2" text_index="true" type="collection">
-        <element attributes="edge_encryption_enabled=true" choice="1" default="11" label="Action" max_length="40" name="action" type="choice">
+    <element audit="true" extends="task" label="Deployment Request" max_length="40" name="x_cdltd_ccw1856_deployment_request" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="1" label="Action" max_length="40" name="action" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Local Testing" value="11"/>
-                <element inactive_on_update="false" label="Remote Deploy" value="13"/>
-                <element inactive_on_update="false" label="Remote Testing" value="12"/>
+                <element inactive_on_update="false" label="Dev Testing" value="1"/>
+                <element inactive="true" inactive_on_update="true" label="Local Testing Failed" value="13"/>
+                <element inactive="true" inactive_on_update="true" label="Local Testing Started" value="11"/>
+                <element inactive="true" inactive_on_update="true" label="Local Testing Successful" value="12"/>
+                <element inactive="true" inactive_on_update="true" label="Remote Deploy Failed" value="16"/>
+                <element inactive="true" inactive_on_update="true" label="Remote Deploy Started" value="14"/>
+                <element inactive="true" inactive_on_update="true" label="Remote Deploy Successful" value="15"/>
+                <element inactive_on_update="false" label="Remote Deployment" value="3"/>
+                <element inactive="true" inactive_on_update="true" label="Remote Testing Failed" value="19"/>
+                <element inactive="true" inactive_on_update="true" label="Remote Testing Started" value="17"/>
+                <element inactive="true" inactive_on_update="true" label="Remote Testing Successful" value="18"/>
+                <element inactive_on_update="false" label="SAT Testing" value="2"/>
             </choice>
         </element>
         <element attributes="encode_utf8=false" label="Application" max_length="32" name="application" reference="x_cdltd_ccw1856_dev_scopes" type="reference"/>

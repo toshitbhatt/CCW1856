@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>set</applies_to>
+        <cat_item/>
+        <cat_variable>IO:a59a38b9db819410cfe3c4ab0b9619b1</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Populate git repo, atf suite and group</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+   if (isLoading || newValue == '') {
+      return;
+   }
+	
+	//alert('value is: '+g_form.getDisplayBox('select_the_application_to_be_deployed').value);
+	var ans = new GlideAjax('ClientCallableUtils');
+	ans.addParam("sysparm_name","fetchAppDetails");
+	ans.addParam("appName",g_form.getDisplayBox('select_the_application_to_be_deployed').value);
+	ans.getXMLAnswer(appDetails);
+	
+	function appDetails(answer){
+		var op = JSON.parse(answer);
+		if(op.status == "Success"){
+			g_form.setValue('git_repository',op.repository_path);
+			g_form.setValue('group_to_be_notified',op.maintained_by);
+			g_form.setValue('atf_suite',op.atfSuites);
+		}
+
+
+	}
+
+   
+   
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>toshit.bhatt</sys_created_by>
+        <sys_created_on>2020-05-28 16:05:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4f284579dbc19410cfe3c4ab0b96190b</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>Populate git repo, atf suite and group</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CCW1856" source="x_cdltd_ccw1856">b5a05473908010107f4468f7a3a96f5c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCW1856">b5a05473908010107f4468f7a3a96f5c</sys_scope>
+        <sys_update_name>catalog_script_client_4f284579dbc19410cfe3c4ab0b96190b</sys_update_name>
+        <sys_updated_by>toshit.bhatt</sys_updated_by>
+        <sys_updated_on>2020-06-01 11:08:52</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <variable_set display_value="Deployment Request">0e5970b9db819410cfe3c4ab0b9619ee</variable_set>
+        <view/>
+    </catalog_script_client>
+</record_update>

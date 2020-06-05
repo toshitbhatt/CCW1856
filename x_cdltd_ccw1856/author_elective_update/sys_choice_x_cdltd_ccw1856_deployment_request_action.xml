@@ -1,4 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="DELETE" field="action" table="x_cdltd_ccw1856_deployment_request" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>action</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Local Testing</label>
+            <language>en</language>
+            <name>x_cdltd_ccw1856_deployment_request</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-15 00:21:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eba55837908010107f4468f7a3a96fab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-15 00:21:33</sys_updated_on>
+            <value>11</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>action</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Remote Testing</label>
+            <language>en</language>
+            <name>x_cdltd_ccw1856_deployment_request</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-15 00:21:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>27a55837908010107f4468f7a3a96fb2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-15 00:21:33</sys_updated_on>
+            <value>12</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>action</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Remote Deploy</label>
+            <language>en</language>
+            <name>x_cdltd_ccw1856_deployment_request</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-15 00:21:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>67a55837908010107f4468f7a3a96faf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-15 00:21:33</sys_updated_on>
+            <value>13</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>action</element>
+            <name>x_cdltd_ccw1856_deployment_request</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-15 00:21:33</sys_created_on>
+            <sys_id>87a12201db051410cfe3c4ab0b9619af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>action</sys_name>
+            <sys_package display_value="CCW1856" source="x_cdltd_ccw1856">b5a05473908010107f4468f7a3a96f5c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CCW1856">b5a05473908010107f4468f7a3a96f5c</sys_scope>
+            <sys_update_name>sys_choice_x_cdltd_ccw1856_deployment_request_action</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-15 00:21:33</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CCW1856">b5a05473908010107f4468f7a3a96f5c</application>
+        <file_path/>
+        <instance_id>4d49c53cdb4f3f008aea21c4059619ac</instance_id>
+        <instance_name>dev90152</instance_name>
+        <name>sys_choice_x_cdltd_ccw1856_deployment_request_action</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_choice action="INSERT_OR_UPDATE" field="action" table="x_cdltd_ccw1856_deployment_request" version="3">
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -74,4 +157,42 @@
             <sys_updated_on>2020-04-15 00:21:33</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
+</record_update>]]></payload>
+        <payload_hash>261312520</payload_hash>
+        <record_name>Deployment Request.Action</record_name>
+        <reverted_from/>
+        <source/>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>toshit.bhatt</sys_created_by>
+        <sys_created_on>2020-06-05 03:15:38</sys_created_on>
+        <sys_id>be962780db1dd010cfe3c4ab0b9619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>172827a13f50000001</sys_recorded_at>
+        <sys_updated_by>toshit.bhatt</sys_updated_by>
+        <sys_updated_on>2020-06-05 03:15:38</sys_updated_on>
+        <type>Choice list</type>
+        <update_guid>7e9627803b1dd0104c25b029a2713df7</update_guid>
+        <update_guid_history>8c36a3001d1dd010cd5806cbb60750f0:-504784464,8436a300791dd010b614d01f08e2d2ec:-757079846,4436a300ec1dd0100b8eba257f4314e8:2041020596,0436a3003e1dd01061521da8a85615e4:570044842,c036a3009f1dd010c0597b9edb8214e0:-619637556,8036a3007c1dd01058fbcb54291094dc:-1420889438,4036a300241dd01087712ea68a2167d8:-200243438,3326a3003e1dd01006f0f4a19a4182d4:-1581615093,ff26a3000f1dd010bbc3cc999f9039cf:1479174942,d4e3b01718cd10107f3cae0f4e3bb95b:73163837,b3d3f0d37dcd1010681f5585df382f08:1289727244,cbd37cd328cd1010b3280d62096333ea:1176566672,3dd370174acd1010ea556104c7835405:-1201152903,78d3fcd31dcd1010bee5e1cdd6f94cb7:-1808851385,e0d33cd3dccd1010780d5e9450f1fd7e:-1074301178,79c3fcd3fdcd10104d66c844845035dd:585402893,8dc330176bcd101032ff42ffac3a15ff:1124915140,02b3f8d3fbcd101087edc2a3d994ba96:1447952732,daa3f89396cd1010de3e7667a3eb75e4:-1860943944,14a338d3e0cd1010db9fa102a9fc70dc:-92360956,80737cd371cd1010982f2618f6a86f03:555905229,f463f893c0cd1010fd858aa0715707f2:1510424234,375378d3eccd10109bfc55ef2045d830:161882217,1053f893abcd101036932544c167a3c1:1217941544,b043b8d3b0cd101082aafe69af297bf9:2011812214,e003f4d301cd1010e7a6d969cafc4330:-1634527513,12a149b190c19410628f3f53a2395be1:-504784464,16a149b1e9c1941064f66324bd0f38dc:1611364388,82a149b1e7c194106151e3330a96edd8:1011591258,98418d31d7c1941049e4f70829ead047:-504784464,dc418d3147c194102a729f24d0e83742:1611364388,d8418d31e4c19410f25e7b499a53ce3e:1011591258,7b4dd325748d54101070418d46817223:-504784464,fb4d9325ed8d54109deb78ff6668baf9:1611364388,7b4d9325c68d5410fdf6f1409e00c3f5:1011591258,baa1220123051410d9d384ad2c5745a5:-1197481720</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-05 04:11:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_choice_set">sys_choice_set</sys_db_object>
+        <sys_id>f6962780db1dd010cfe3c4ab0b9619bf</sys_id>
+        <sys_metadata>f6962780db1dd010cfe3c4ab0b9619bf</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>action</sys_name>
+        <sys_package display_value="CCW1856" source="x_cdltd_ccw1856">b5a05473908010107f4468f7a3a96f5c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CCW1856">b5a05473908010107f4468f7a3a96f5c</sys_scope>
+        <sys_scope_delete display_value="">c342593af4a2410681f0669efc1611a4</sys_scope_delete>
+        <sys_update_name>sys_choice_x_cdltd_ccw1856_deployment_request_action</sys_update_name>
+        <sys_update_version display_value="sys_choice_x_cdltd_ccw1856_deployment_request_action">be962780db1dd010cfe3c4ab0b9619f7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-05 04:11:23</sys_updated_on>
+    </sys_metadata_delete>
 </record_update>
